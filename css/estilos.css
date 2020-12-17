@@ -1,0 +1,224 @@
+/* ----------------------------------------Estilo iconos---------------------------------------------- */
+@font-face {
+    font-family: 'icomoon';
+    src:  url('/fonts/fonts/icomoon.eot?r5sw91');
+    src:  url('/fonts/fonts/icomoon.eot?r5sw91#iefix') format('embedded-opentype'),
+      url('/fonts/fonts/icomoon.ttf?r5sw91') format('truetype'),
+      url('/fonts/fonts/icomoon.woff?r5sw91') format('woff'),
+      url('/fonts/fonts/icomoon.svg?r5sw91#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-recycle:before {
+    content: "\e904";
+    color: #90bc76;
+  }
+  .icon-search:before {
+    content: "\e903";
+  }
+  .icon-location:before {
+    content: "\e900";
+  }
+  .icon-cart:before {
+    content: "\e901";
+  }
+  .icon-menu:before {
+    content: "\e902";
+  }
+  
+  /*------------------------------------------------html body-------------------------------------*/
+  /* html, body {
+      position: relative;
+      height: 100%;
+    }
+
+    body {
+      background: #eee;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #000;
+      margin: 0;
+      padding: 0;
+    } */
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    img{
+      max-width: 100%;
+      }
+/* --------------------------------------------Estilos Header---------------------------------------- */
+.header{
+    width: 100vw;
+}  
+.header-menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    padding: 15px 30px;
+  }
+  .header-menu i{
+      color: white;
+      font-size: 20px;
+  }
+
+  .header-container1{
+      width: 50%;
+      display: flex;
+      justify-content: flex-end;
+  }
+  .header-container ul{
+      display: flex;
+      list-style: none;
+      align-items: center;
+  }
+  .header-container li{
+      margin-right: 20px;
+      padding: 0 10px;
+  }
+.icon-search{
+    margin-right: 30px;
+}
+ .search-input-container{
+    width: 190px;
+    border-radius: 15px;
+    /* border: 1px solid #def1e5; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsla(0,0%,87.8%,.99);
+ }
+  header select{
+      background-color: black;
+      color: white;
+      border: none;
+  }
+  header input{
+      background-color: hsla(0,0%,87.8%,.86);
+      width: 150px;
+      color: white;
+      border-radius: 15px;
+      border: none;
+      outline: none;
+      height: 30px;
+      margin-left: 30px;
+  }
+  /* -----------------------------------------Estilos Nav----------------------------------------------- */
+.menu-nav{
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    -webkit-box-shadow: -2px 9px 11px -4px rgba(0,0,0,0.74);
+    -moz-box-shadow: -2px 9px 11px -4px rgba(0,0,0,0.74);
+    box-shadow: -2px 9px 11px -4px rgba(0,0,0,0.74);
+}
+.menu-nav li{
+    /* font-family: roboto; */
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 0 10px;
+}
+.menu-nav a{
+    text-decoration: none;
+    color: #4b4b4b;
+}
+
+/* --------------------------------------------Estilos carrusel---------------------------- */
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+/* .swiper-slide img{
+  max-width: 100%;
+} */
+/* -----------------------------------------Categorias------------------------------------------ */
+.container h1{
+   justify-content: center;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 25px;
+    line-height: 29px;
+    letter-spacing: 1.25px;
+    font-weight: 700;
+    margin: 30px 0;
+}
+.event-list{
+  display: flex;
+  flex-wrap: wrap;
+}
+.event{
+  margin: 1%;
+  width: 25%;
+  border-radius: 3px;
+  overflow: hidden;
+  flex-shrink: 0;
+  /* background-color: #f4fbff; */
+  margin-bottom: 30px;
+}
+.event img{
+  width: 250px;
+  height: 115px;
+  object-fit: cover;
+  margin: 0;
+}
+.event-imageContainer{
+  margin: 0;
+}
+.event-detail{
+  /* margin: 40px 0px; */
+  margin-top: -4px;
+  background-color: red;
+  color: white;
+  position: relative;
+  padding: 1em;
+  text-align: center;
+}
+.container{
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+  display: inherit;
+  justify-content: center;
+  align-items: inherit;
+  height: inherit;
+  flex-wrap: inherit;
+}
