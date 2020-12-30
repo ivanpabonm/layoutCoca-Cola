@@ -67,6 +67,7 @@
 /* --------------------------------------------Estilos Header---------------------------------------- */
 .header{
     width: 100vw;
+    position: fixed;
 }  
 .header-menu{
     display: flex;
@@ -129,6 +130,7 @@
     -webkit-box-shadow: -2px 9px 11px -4px rgba(0,0,0,0.74);
     -moz-box-shadow: -2px 9px 11px -4px rgba(0,0,0,0.74);
     box-shadow: -2px 9px 11px -4px rgba(0,0,0,0.74);
+    background-color: white;
 }
 .menu-nav li{
     /* font-family: roboto; */
@@ -167,9 +169,10 @@
   -webkit-align-items: center;
   align-items: center;
 }
-/* .swiper-slide img{
+.swiper-slide img{
   max-width: 100%;
-} */
+  margin-top: 140px;
+}
 /* -----------------------------------------Categorias------------------------------------------ */
 .container h1{
    justify-content: center;
@@ -193,6 +196,7 @@
   flex-shrink: 0;
   /* background-color: #f4fbff; */
   margin-bottom: 30px;
+  cursor: pointer;
 }
 .event img{
   width: 250px;
@@ -206,11 +210,12 @@
 .event-detail{
   /* margin: 40px 0px; */
   margin-top: -4px;
-  background-color: red;
+  background-color: #e62e2d;
   color: white;
   position: relative;
   padding: 1em;
   text-align: center;
+  position: inherit;
 }
 .container{
   max-width: 1000px;
@@ -221,4 +226,282 @@
   align-items: inherit;
   height: inherit;
   flex-wrap: inherit;
+}
+/* ----------------------------------------------estilos promosiones de la semana----------------------------------------------- */
+.sale-Wekeed{
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #f4f4f4;
+}
+.sale{
+  margin: 1%;
+  width: 25%;
+  border-radius: 3px;
+  overflow: hidden;
+  flex-shrink: 0;
+  /* background-color: #f4fbff; */
+  margin-bottom: 30px;
+  background-color: white;
+  padding: 10px 30px;
+  box-shadow: 0 3px 6px 0 rgba(0,0,0,.29);
+  border-radius: 8px; 
+  position: relative;
+  position: inherit;
+}
+.img-container{
+  text-align: center;
+}
+.sale img{
+  object-fit: cover;
+  margin: 0;
+  vertical-align: middle;
+  border-style: none;
+  height: 200px;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.sale-Wekeed p, h3{
+  text-align: center;
+  margin-bottom: .3em;
+}
+.sale p{
+  color: #4b4b4b;
+}
+.sale-Wekeed p span{
+  background-color: #74aa50;
+  border-radius: 2px;
+  color: white;
+  font-size: 15px;
+  padding: 3px;
+}
+.button{
+  text-align: center;
+}
+button{
+  background-color: #e62e2d;
+  color: white;
+  width: 80%;
+  height: 35px;
+  border-radius: 3px;
+  border: none;
+  outline: none;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.container2{
+  justify-content: center;
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+  display: inherit;
+  align-items: inherit;
+  height: inherit;
+  /* flex-wrap: inherit; */
+}
+/* ----------------------------------------------Estilos como funicona ------------------------------------------------------ */
+.container h1{
+  font-size: 25px;
+  text-align: center;
+  font-weight: 700;
+  letter-spacing: 1.25px;
+  line-height: 24px;
+  margin-bottom: 2em;
+  text-transform: uppercase;
+  text-align: center;
+}
+.steps{
+  display: flex;
+  flex-wrap: wrap;
+  background-color: white;
+}
+.steps-container{
+  width: 350px;
+  margin: 0 1em;
+}
+.steps-container-img{
+  position: inherit;
+  background: #fff;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin: 0 auto 2em;
+  border: 2px dashed #f40000;
+}
+.container-text{
+  margin-bottom: 50px;
+  text-align: center;
+  color: #000;
+  line-height: 18px;
+}
+
+.container-text h4{
+  font-weight: 500;
+  font-size: 18px;
+  display: block;
+    margin-block-start: 1.33em;
+    margin-block-end: 1.33em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+.container-text div p{
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-size: 16px;
+  margin: 0;
+  color: #4b4b4b;
+}
+.button2{
+  background-color: #e62e2d;
+  color: white;
+  width: 20%;
+  height: 45px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+/* ----------------------------------------estilos whatsapp seccion---------------------- */
+.whatsapp-container{
+  min-height: 338px;
+  height: 100%;
+  width: 100%;
+  background-color: #f4f4f4;
+}
+.section-container{
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  height: 100%;
+  padding: 3em 2em;
+}
+.img-container{
+  padding: 0 2em;
+}
+.text-container{
+  max-width: 500px;
+  justify-content: left;
+  text-align: left;
+  padding: 3em 0 0 3em;
+}
+.text-container h6{
+  font-size: 30px;
+}
+.button3{
+  margin: 1.5em 0;
+  font-size: 11px;
+  width: 225px;
+  border: 0;
+  color: #fff;
+  padding: 1em;
+  border-radius: 8px;
+  letter-spacing: 1.1px;
+  min-height: 45px;
+  outline: none;
+  text-transform: uppercase;
+  background: #f40000;
+  transition: all .3s ease-in-out;
+}
+/* ------------------wambi container------------------------------------------- */
+.wambi{
+  min-height: 418px;    
+  height: 100%;
+  width: 100%;
+  background-image: url("https://clientes.coca-cola.com/background-wabi.3106a35a0bc6c38515af.svg");
+}
+.wambi-container{
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  height: 100%;
+  padding: 4em 2em 0;
+}
+.wambi-container-seccion{
+  max-width: 500px;
+  justify-content: left;
+  text-align: left;
+  margin-top: -6em;
+}
+.wambi-container-seccion1{
+  max-width: 500px;
+  justify-content: left;
+  text-align: left;
+  margin-top: -6em;
+}
+.wambi-text{
+  text-align: left;
+}
+.wambi-text h6{
+  font-family: Roboto;
+  font-size: 1rem;
+  margin-bottom: .5rem;
+  font-weight: 500;
+  line-height: 1.2;
+  font-weight: bold;
+}
+.wambi-text p{
+  color: #4b4b4b;
+  margin: 1em 0 2em;
+}
+.wambi-text label{
+  font-weight: 500;
+  margin-bottom: 2em;
+  color: #4b4b4b;
+}
+.wambi-apps{
+  display: flex;
+  align-items: center;
+}
+.wambi-apps p{
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0 1em 0 0;
+}
+.wambi a{
+  margin: 0 1em 0 0;  
+}
+.wambi a img{
+  transition: all .3s ease-in-out;
+  vertical-align: middle;
+  border-style: none;
+}
+.wambi-container-seccion2{
+  padding: 0 2em;
+}
+.wambi-img{
+  width: 238px;
+  height: 290px;
+}
+/* -----------------------------------------estilos footer--------------------------------- */
+footer{
+  background: #000;
+  color: #fff;
+  text-align: center;
+  padding: 1em 0;
+  /* height: 64px; */
+}
+.footer-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.footer-container p{
+  font-size: 12px;
+  margin: 0;
+  width: 400px;
+  text-align: left;
+}
+.footer-img img{
+  border-radius: 50%;
+    width: 31px;
+    height: 31px;
+    border: 1px solid #fff;
 }
